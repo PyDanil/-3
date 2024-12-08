@@ -62,13 +62,18 @@ https://docs.google.com/spreadsheets/d/1V72_7OJF7xP8i-Ou-T13RhdHoq0791MSocld0fdO
 Ход работы:
 - Визуализируйте параметры оружия в таблице.
   
+  - Вероятность пападания в процентах
+  
 ![image](https://github.com/user-attachments/assets/f36b10c3-d15a-41d9-822c-7158b641fbd4)
 
+  - Средний урон
+  
 ![image](https://github.com/user-attachments/assets/d0fecf0c-d0b6-4745-8725-34fa0975fd84)
 
 - Среднеквадратическое отклонение (СКО)
 
 Разберём пример на огнемёте:
+
 ![image](https://github.com/user-attachments/assets/c40b22c9-0931-4a72-81cc-f08b1e2bad06)
 
 ![image](https://github.com/user-attachments/assets/5dfac3b2-2c96-4cac-acbb-1148c4c03414)
@@ -93,11 +98,22 @@ https://docs.google.com/spreadsheets/d/1V72_7OJF7xP8i-Ou-T13RhdHoq0791MSocld0fdO
 ## Задание 3
 ### Решение в 80+ баллов должно визуализировать данные из google-таблицы, и с помощью Python передавать переменные в проект Unity. В Python данные также должны быть визуализированы.
 Ход работы:
-- abs
+
+- Получение API и привязка к таблице и Unity:
+
+![image](https://github.com/user-attachments/assets/86ae8b83-dab3-40c5-9a8f-811a50c850a9)
+
+https://sheets.googleapis.com/v4/spreadsheets/1V72_7OJF7xP8i-Ou-T13RhdHoq0791MSocld0fdOHqA/values/%D0%9B%D0%B8%D1%81%D1%821?key=AIzaSyCH4ZyFo9yO8evZFaTKSf6-ScKuthnJ73E
+
+Ссылка на таблицу со значениями в виде текста.
+
+- К Unity подключили скрипт хранящий в себе ссылку на таблицу со всеми значениями и параметрами оружия:
+
+![image](https://github.com/user-attachments/assets/22d88cf2-7124-4acc-b0ce-2ba9be70fc86)
 
 ## Выводы
 
-abs
+- Сделали 4 новых оружия. Дали оружиям характеристики и расписали как и при каких условиях они будут работать. Сделали Среднеквадратическое отклонение, Разброс урона оружия и Вариативность времени отклика игрока (реакция на события) для огнемёта. Не удалось передать с помощью Python (получилось с помощью C#) данные в Unity.
 
 | Plugin | README |
 | ------ | ------ |
